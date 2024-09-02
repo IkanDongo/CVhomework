@@ -50,21 +50,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 47px;
     color: #b71c1c;
 }
 
 .container1 {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 30px;
     width: 80%;
-    height: auto;
+    height: 40vw;
     max-width: 1000px;
     display: flex;
     justify-content: center;
     border: 2px solid #f44336;
-    padding: 30px;
+    padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -105,8 +104,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
-    padding: 20px;
+    align-items: center;
+    padding-bottom: 30px;
     margin-bottom: 20px;
 }
 
@@ -128,7 +127,7 @@ body {
 
 .container4 p {
     color: #b71c1c;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .container5 {
@@ -164,7 +163,7 @@ body {
 .container6 li {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .ProfilePic {
@@ -198,7 +197,7 @@ body {
 }
 
 .skill {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -249,7 +248,7 @@ body {
 }
 
 
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
 
     .ProfilePic {
         width: 175px;
@@ -326,8 +325,8 @@ body {
     }
 
     .container6 {
-        width: 85vw;
-        padding: 20px;
+        width: auto;
+        padding: 30px;
         margin-bottom: 20px;
     }
 
@@ -440,9 +439,9 @@ body {
     }
 
     .container6 {
-        width: 90vw;
-        height: 3000px;
-        padding: 20px;
+        width: auto;
+        height: auto;
+        padding-left: 100px;
         margin-bottom: 20px;
     }
 
@@ -468,9 +467,8 @@ body {
     }
 
     .icons a {
-        font-size: 40px;
+        font-size: 50px;
         margin: 0 8px;
-        font-size: 60px;
     }
 
     .skill-container {
