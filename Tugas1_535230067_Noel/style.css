@@ -1,85 +1,487 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ffebee;
 }
 
-
- 
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+.navbar {
+    width: 100%;
+    background-color: #f44336;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
-.center {
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #ffffff;
     text-align: center;
-    border: 100px;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.container1{
-    width: 50vw;
-    border: 100px;
-    justify-content: center;
+.navbar ul li a:hover {
+    background-color: #d32f2f;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: white;
+    padding-top: 47px;
+    color: #b71c1c;
 }
 
-.container1 p {
-    color: black;
-    font-size: 12px;
+.container1 {
+    scroll-margin-top: 47px;
+    width: 70vw;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #f44336;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
- .ProfilePic{
+.container1 h1,
+.container1 h2 {
+    color: #f44336;
+    text-align: center;
+}
+
+.container1 h3 {
+    color: #d32f2f;
+    text-align: left;
+}
+
+.container2 {
+    width: 30vw;
+    height: 33vw;
+    align-items: center;
+    background-color: #ffebee;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #f44336;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 h1,
+.container2 h2 {
+    color: #b71c1c;
+    text-align: left;
+}
+
+
+
+.container3 {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 20px;
+}
+
+.container3 p {
+    text-align: justify;
+    color: #c62828;
+}
+
+
+.container4 {
+    width: 43vw;
+    height: 50vw;
+    border: 2px solid #f44336;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container4 p {
+    color: #b71c1c;
+    font-size: 20px;
+}
+
+.container5 {
+    width: 43vw;
+    height: 25vw;
+    border: 2px solid #f44336;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container5 p {
+    color: #b71c1c;
+    font-size: 16px;
+}
+
+
+.container6 {
+    width: 100%;
+    height: 50%;
+    text-align: justify;
+}
+
+.container6 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.container6 li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.ProfilePic {
     width: 200px;
+    margin-top: 30px;
     object-fit: cover;
     border-radius: 50%;
-} 
+    border: 3px solid #f44336;
+    display: block;
+}
 
+.icons {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 45px;
+    color: #c62828;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #b71c1c;
+}
+
+.skill-container {
+    margin-bottom: 20px;
+}
+
+.skill {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #ffebee;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 25px;
+}
+
+.html {
+    width: 90%;
+    background-color: #e44d26;
+}
+
+.css {
+    width: 80%;
+    background-color: #e44d26;
+}
+
+.java {
+    width: 60%;
+    background-color: #e44d26;
+}
+
+.c {
+    width: 80%;
+    background-color: #e44d26;
+}
+
+.javascript {
+    width: 70%;
+    background-color: #e44d26;
+}
+
+.python {
+    width: 60%;
+    background-color: #e44d26;
+}
+
+
+@media (max-width: 1440px) {
+
+    .ProfilePic {
+        width: 175px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        height: auto;
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container1 {
+        width: 80vw;
+        height: 140vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid #f44336;
+    }
+
+    .container2,
+    .container3 {
+        width: 95%;
+        text-align: center;
+        padding: 15px;
+        border: none;
+    }
+
+    .container2 {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #ffebee;
+        border-radius: 10px;
+        border: 1px solid #f44336;
+    }
+
+    .container3 {
+        padding: 20px;
+    }
+
+    .container4 {
+        width: 75vw;
+        height: auto;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .container4 p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container5 {
+        width: 75vw;
+        height: auto;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .container5 p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container6 {
+        width: 85vw;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container6 ul {
+        padding-left: 60px;
+    }
+
+    .container6 li {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .icons {
+        margin-top: 50px;
+    }
+
+    .icons a {
+        font-size: 40px;
+        margin: 0 8px;
+    }
+
+    .skill-container {
+        margin-bottom: 15px;
+    }
+
+    .skill {
+        font-size: 16px;
+    }
+
+    .bar {
+        height: 22px;
+        line-height: 22px;
+        padding-right: 8px;
+    }
+}
 
 @media (max-width: 768px) {
-    body {
-        padding: 0;
-        margin: 0;
+
+    .container {
+        height: auto;
+        padding-top: 18px;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .container{
-        width: 100vw;
-        height: 100vh;
+
+    .container1 {
+        width: 90vw;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        padding: 20px;
+        border: none;
     }
-    
-    .center {
-        display: flex;
-        justify-content: center;
+
+    .container2 {
+        width: 100%;
+        height: 800px;
         text-align: center;
-        border: 100px;
+        padding: 10px;
+        border: none;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #ffebee;
+        border-radius: 10px;
+        border: 1px solid #f44336;
     }
-    
-    .container1{
-        width: 50vw;
-        border: 100px;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
+
+    .container3 {
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        padding: 10px;
+        border: none;
     }
-    
-    .container1 p {
-        color: red;
-        font-size: 10px;
+
+
+    .container3 {
+        padding: 20px;
     }
-    
-     .ProfilePic{
-        width: 200px;
-        object-fit: cover;
+
+    .container4 {
+        width: 80vw;
+        height: auto;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .container4 p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container5 {
+        width: 80vw;
+        height: auto;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .container5 p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container6 {
+        width: 90vw;
+        height: 3000px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container6 ul {
+        padding-left: 20px;
+    }
+
+    .container6 li {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .ProfilePic {
+        width: 250px;
+        height: auto;
         border-radius: 50%;
-        
-    } 
+        margin-bottom: 15px;
+    }
+
+    .icons {
+        margin-top: 50px;
+    }
+
+    .icons a {
+        font-size: 40px;
+        margin: 0 8px;
+        font-size: 60px;
+    }
+
+    .skill-container {
+        margin-bottom: 15px;
+    }
+
+    .skill {
+        font-size: 16px;
+    }
+
+    .bar {
+        height: 20px;
+        line-height: 20px;
+        padding-right: 8px;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 }
