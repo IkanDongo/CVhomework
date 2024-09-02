@@ -46,24 +46,26 @@ body {
 
 .container {
     width: 100%;
-    height: 2200px;
+    min-height: 2200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 47px;
+    padding-top: 60px;
     color: #b71c1c;
 }
 
 .container1 {
-    scroll-margin-top: 47px;
-    width: 70vw;
-    height: 83vh;
+    scroll-margin-top: 60px;
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     border: 2px solid #f44336;
-    padding: 40px;
+    padding: 30px;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .container1 h1,
@@ -78,8 +80,9 @@ body {
 }
 
 .container2 {
-    width: 30vw;
-    height: 33vw;
+    width: 40%;
+    max-width: 500px;
+    height: auto;
     align-items: center;
     background-color: #ffebee;
     padding: 20px;
@@ -87,6 +90,7 @@ body {
     border: 1px solid #f44336;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .container2 h1,
@@ -95,15 +99,15 @@ body {
     text-align: left;
 }
 
-
-
 .container3 {
-    width: 65vw;
+    width: 80%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .container3 p {
@@ -111,14 +115,15 @@ body {
     color: #c62828;
 }
 
-
 .container4 {
-    width: 43vw;
-    height: 50vw;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
     border: 2px solid #f44336;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .container4 p {
@@ -127,12 +132,14 @@ body {
 }
 
 .container5 {
-    width: 43vw;
-    height: 25vw;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
     border: 2px solid #f44336;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .container5 p {
@@ -140,11 +147,11 @@ body {
     font-size: 16px;
 }
 
-
 .container6 {
     width: 100%;
-    height: 50%;
+    height: auto;
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 .container6 ul {
@@ -171,13 +178,13 @@ body {
 
 .icons {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .icons a {
     margin: 0 10px;
     display: inline-block;
-    font-size: 45px;
+    font-size: 40px;
     color: #c62828;
     transition: color 0.3s ease;
 }
@@ -242,7 +249,7 @@ body {
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1240px) {
 
     .ProfilePic {
         width: 175px;
@@ -359,7 +366,7 @@ body {
 }
 
 @media (max-width: 768px) {
-
+    
     .container {
         height: auto;
         padding-top: 18px;
@@ -378,7 +385,7 @@ body {
         border: none;
     }
 
-    .container2 {
+    .container2{
         width: 100%;
         height: 800px;
         text-align: center;
